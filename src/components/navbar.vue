@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import getLanguage from '@/utils/getLanguage'
 import { useLanguageStore } from '@/stores/language'
-import { onMounted, ref } from 'vue'
+import { onMounted, computed } from 'vue'
 
-const { selectedLanguage } = useLanguageStore()
-const texts = ref()
+const languageStore = useLanguageStore()
+
+const texts = computed(() => languageStore.texts)
 
 onMounted(async () => {
-  texts.value = await getLanguage(selectedLanguage)
+  await languageStore.setLanguage(languageStore.selectedLanguage) // Isso já chama `setTexts`
 })
 </script>
 

@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import getLanguage from '@/utils/getLanguage'
 import { useLanguageStore } from '@/stores/language'
-import { onMounted, ref } from 'vue'
+import { onMounted, computed } from 'vue'
 
-const { selectedLanguage } = useLanguageStore()
-const texts = ref()
+const languageStore = useLanguageStore()
+
+const texts = computed(() => languageStore.texts)
+
+const changeLanguage = () => {
+  languageStore.setLanguage(languageStore.selectedLanguage === 'EN_US' ? 'PT_BR' : 'EN_US')
+}
 
 onMounted(async () => {
-  texts.value = await getLanguage(selectedLanguage)
+  await languageStore.setLanguage(languageStore.selectedLanguage) // Isso já chama `setTexts`
 })
 </script>
 
@@ -28,7 +32,7 @@ onMounted(async () => {
       ></span>
 
       <p class="text-white-soft text-sm md:text-base tracking-[.25em] uppercase pb-4 text-center">
-        {{ texts?.HOME?.SUBTITLE }}
+        {{ texts?.HOME?.BUTTON }}
       </p>
       <h1 class="text-white text-3xl md:text-7xl font-bold tracking-tight text-center">
         {{ texts?.HOME?.TITLE }} <br />
@@ -38,6 +42,7 @@ onMounted(async () => {
         {{ texts?.HOME?.DESCRIPTION }}
       </p>
       <button
+        @click="changeLanguage()"
         class="py-4 px-10 bg-primary text-white-smull tracking-tight rounded-2xl border border-white mt-10"
       >
         {{ texts?.HOME?.BUTTON }}
