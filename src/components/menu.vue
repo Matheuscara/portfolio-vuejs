@@ -22,7 +22,7 @@
           alt="click-with-coment"
         />
         <span
-          class="absolute leading-120% text-bold bottom-15 text-3xl left-10 text-white animate__delay-1s animate__animated animate__fadeIn"
+          class="absolute leading-120% text-bold bottom-15 text-xl md:text-3xl left-10 text-white animate__delay-1s animate__animated animate__fadeIn"
           >I prioritize client <br />
           collaboration, fostering <br />
           open communication
@@ -38,7 +38,7 @@
         ></div>
 
         <p
-          class="z-20 text-white text-bold text-3xl p-10 animate__delay-1s animate__animated animate__fadeIn"
+          class="z-20 text-white text-bold text-xl md:text-3xl p-10 animate__delay-1s animate__animated animate__fadeIn"
         >
           I’m very flexible with time zone communications
         </p>
@@ -50,7 +50,7 @@
         <div class="inner-box"></div>
 
         <p
-          class="z-20 text-white text-bold text-3xl pl-10 flex flex-col animate__delay-1s animate__animated animate__fadeIn"
+          class="z-20 text-white text-bold text-xl md:text-3xl pl-10 flex flex-col animate__delay-1s animate__animated animate__fadeIn"
         >
           <span class="text-white-soft text-base">I constantly try to improve</span>
           My tech stack
@@ -70,7 +70,7 @@
           :style="{ backgroundImage: `url('/images/card-bg.png')` }"
         ></span>
         <p
-          class="z-20 text-white text-bold text-3xl pl-10 flex flex-col animate__delay-1s animate__animated animate__fadeIn"
+          class="z-20 text-white text-bold text-xl md:text-3xl pl-10 flex flex-col animate__delay-1s animate__animated animate__fadeIn"
         >
           <span class="text-white-soft text-base">The Inside Scoop</span>
           Currently building a <br />
@@ -91,7 +91,7 @@
           :style="{ backgroundImage: `url('/svgs/iphone-bg.svg')` }"
         ></span>
         <p
-          class="text-white text-bold text-2xl pl-7 animate__delay-1s animate__animated animate__fadeIn"
+          class="text-white text-bold text-xl md:text-2xl pl-7 animate__delay-1s animate__animated animate__fadeIn"
         >
           Currently building a <br />
           JS Animation library
@@ -139,7 +139,7 @@
   grid-row-gap: 0px;
   padding-left: 40px;
   padding-right: 40px;
-  max-width: 2300px;
+  max-width: 1400px;
 }
 
 .div1 {
