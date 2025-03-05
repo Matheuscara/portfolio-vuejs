@@ -188,32 +188,39 @@
   .div1 {
     grid-area: 1 / 1 / 2 / 5;
     margin-right: 0px;
-    min-height: 500px;
+    min-height: 450px;
   }
 
   .div2 {
     margin-top: 30px;
     margin-bottom: 0px;
+    min-height: 155px;
 
     grid-area: 2 / 1 / 3 / 5;
   }
 
   .div3 {
+    min-height: 155px;
     margin-top: 30px;
     grid-area: 3 / 1 / 4 / 5;
   }
 
   .div4 {
+    min-height: 200px;
     margin-left: 0px;
     margin-bottom: 30px;
     grid-area: 4 / 1 / 5 / 5;
   }
 
   .div5 {
+    min-height: 100px;
+
     grid-area: 5 / 1 / 6 / 5;
   }
 
   .div6 {
+    min-height: 100px;
+
     grid-area: 6 / 1 / 7 / 5;
   }
 
