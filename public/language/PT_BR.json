@@ -1,0 +1,26 @@
+{
+  "NAVBAR": {
+    "HOME": "Home",
+    "PROJECTS": "Projetos",
+    "TESTIMONIALS": "Testemunhas",
+    "CONTACT": "Contato"
+  },
+  "HOME": {
+    "SUBTITLE": "O Mago da Web!",
+    "TITLE": "Transformando Conceitos em ",
+    "KEYTITLE": "experiências de Usuário Perfeitas",
+    "DESCRIPTION": "Olá! Eu sou Matheus Dias, um Dev Brazil do Brasil",
+    "BUTTON": "Veja meu trabalho!"
+  },
+  "MENU": {
+    "CARD1": "Eu priorizo a colaboração com o cliente, promovendo a comunicação aberta",
+    "CARD2": "Sou muito flexível com comunicações de fuso horário",
+    "CARD3": "Eu tento melhorar constantemente",
+    "CARD3A": "Eu tento melhorar constantemente",
+    "CARD4": "A informação privilegiada",
+    "CARD4A": "Atualmente construindo uma biblioteca de animação JS",
+    "CARD5": "Entusiasta de tecnologia com paixão por desenvolvimento",
+    "CARD6": "Você quer começar um projeto juntos?",
+    "CARD6A": "Copie meu endereço de e-mail"
+  }
+}

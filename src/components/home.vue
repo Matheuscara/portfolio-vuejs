@@ -1,4 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import getLanguage from '@/utils/getLanguage'
+import { useLanguageStore } from '@/stores/language'
+import { onMounted, ref } from 'vue'
+
+const { selectedLanguage } = useLanguageStore()
+const texts = ref()
+
+onMounted(async () => {
+  texts.value = await getLanguage(selectedLanguage)
+})
+</script>
 
 <template>
   <div
@@ -17,19 +28,19 @@
       ></span>
 
       <p class="text-white-soft text-sm md:text-base tracking-[.25em] uppercase pb-4 text-center">
-        Dynamic Web Magic with Next.js
+        {{ texts?.HOME?.SUBTITLE }}
       </p>
       <h1 class="text-white text-3xl md:text-7xl font-bold tracking-tight text-center">
-        Transforming Concepts into <br />
-        Seamless <span class="text-secundary">User Experiences</span>
+        {{ texts?.HOME?.TITLE }} <br />
+        <span class="text-secundary"> {{ texts?.HOME?.KEYTITLE }} <br /> </span>
       </h1>
       <p class="text-white-soft text-sm md:text-base tracking-[.25em] uppercase pt-6 text-center">
-        Hi! I’m Matheus Dias, a Dev Brazil from Brazil
+        {{ texts?.HOME?.DESCRIPTION }}
       </p>
       <button
         class="py-4 px-10 bg-primary text-white-smull tracking-tight rounded-2xl border border-white mt-10"
       >
-        See my work
+        {{ texts?.HOME?.BUTTON }}
       </button>
     </section>
   </div>

@@ -1,5 +1,14 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+import getLanguage from '@/utils/getLanguage'
+import { useLanguageStore } from '@/stores/language'
+import { onMounted, ref } from 'vue'
+
+const { selectedLanguage } = useLanguageStore()
+const texts = ref()
+
+onMounted(async () => {
+  texts.value = await getLanguage(selectedLanguage)
+})
 </script>
 
 <template>
@@ -8,10 +17,10 @@ import { RouterLink } from 'vue-router'
       <nav
         className="text-white-smull flex gap-4 py-3 px-12 justify-center bg-primary rounded-2xl border border-white"
       >
-        <RouterLink to="/">About</RouterLink>
-        <RouterLink to="/">Projects</RouterLink>
-        <RouterLink to="/">Testimonials</RouterLink>
-        <RouterLink to="/">Contact</RouterLink>
+        <RouterLink to="/"> {{ texts?.NAVBAR?.HOME }} </RouterLink>
+        <RouterLink to="/">{{ texts?.NAVBAR?.PROJECTS }}</RouterLink>
+        <RouterLink to="/">{{ texts?.NAVBAR?.TESTIMONIALS }}</RouterLink>
+        <RouterLink to="/">{{ texts?.NAVBAR?.CONTACT }}</RouterLink>
       </nav>
     </div>
   </header>

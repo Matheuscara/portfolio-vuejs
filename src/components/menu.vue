@@ -1,4 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import getLanguage from '@/utils/getLanguage'
+import { useLanguageStore } from '@/stores/language'
+import { onMounted, ref } from 'vue'
+
+const { selectedLanguage } = useLanguageStore()
+const texts = ref()
+
+onMounted(async () => {
+  texts.value = await getLanguage(selectedLanguage)
+})
+</script>
 
 <template>
   <div
@@ -23,9 +34,8 @@
         />
         <span
           class="absolute leading-120% text-bold bottom-15 text-xl md:text-3xl left-10 text-white animate__delay-1s animate__animated animate__fadeIn"
-          >I prioritize client <br />
-          collaboration, fostering <br />
-          open communication
+        >
+          {{ texts?.MENU?.CARD1 }}
         </span>
       </div>
 
@@ -40,7 +50,7 @@
         <p
           class="z-20 text-white text-bold text-xl md:text-3xl p-10 animate__delay-1s animate__animated animate__fadeIn"
         >
-          I’m very flexible with time zone communications
+          {{ texts?.MENU?.CARD2 }}
         </p>
       </div>
 
@@ -52,8 +62,8 @@
         <p
           class="z-20 text-white text-bold text-xl md:text-3xl pl-10 flex flex-col animate__delay-1s animate__animated animate__fadeIn"
         >
-          <span class="text-white-soft text-base">I constantly try to improve</span>
-          My tech stack
+          <span class="text-white-soft text-base">{{ texts?.MENU?.CARD3 }}</span>
+          {{ texts?.MENU?.CARD3A }}
         </p>
       </div>
 
@@ -72,9 +82,8 @@
         <p
           class="z-20 text-white text-bold text-xl md:text-3xl pl-10 flex flex-col animate__delay-1s animate__animated animate__fadeIn"
         >
-          <span class="text-white-soft text-base">The Inside Scoop</span>
-          Currently building a <br />
-          JS Animation library
+          <span class="text-white-soft text-base"> {{ texts?.MENU?.CARD4 }} </span>
+          {{ texts?.MENU?.CARD4A }}
         </p>
       </div>
 
@@ -93,8 +102,7 @@
         <p
           class="text-white text-bold text-xl md:text-2xl pl-7 animate__delay-1s animate__animated animate__fadeIn"
         >
-          Currently building a <br />
-          JS Animation library
+          {{ texts?.MENU?.CARD5 }}
         </p>
       </div>
       <div
@@ -108,11 +116,11 @@
         <p
           class="text-white w-full text-bold text-xl animate__delay-1s animate__animated animate__fadeIn text-center flex flex-col items-center"
         >
-          Do you want to start a project together?
+          {{ texts?.MENU?.CARD6 }}
           <button
             class="bg-primary text-sm text-white tracking-tight rounded-md border border-white mt-2 px-3 py-1 animate__animated animate__pulse animate__infinite"
           >
-            Copy my email address
+            {{ texts?.MENU?.CARD6A }}
           </button>
         </p>
       </div>

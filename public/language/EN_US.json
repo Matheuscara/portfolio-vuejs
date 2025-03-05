@@ -1,0 +1,26 @@
+{
+  "NAVBAR": {
+    "HOME": "Home",
+    "PROJECTS": "Projects",
+    "TESTIMONIALS": "Testimonials",
+    "CONTACT": "Contact"
+  },
+  "HOME": {
+    "SUBTITLE": "Web magician!",
+    "TITLE": "Transforming Concepts into ",
+    "KEYTITLE": "Seamless User Experiences",
+    "DESCRIPTION": "Hi! I’m Matheus Dias, a Dev from Brazil",
+    "BUTTON": "Check out my work!"
+  },
+  "MENU": {
+    "CARD1": "I prioritize client collaboration, fostering open communication",
+    "CARD2": "I'm very flexible with time zone communications",
+    "CARD3": "I constantly strive for improvement",
+    "CARD3A": "I constantly strive for improvement",
+    "CARD4": "Insider information",
+    "CARD4A": "Currently building a JS animation library",
+    "CARD5": "Tech enthusiast with a passion for development",
+    "CARD6": "Do you want to start a project together?",
+    "CARD6A": "Copy my email address"
+  }
+}
