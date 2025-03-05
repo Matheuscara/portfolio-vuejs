@@ -1,0 +1,44 @@
+@import './base.scss';
+@import 'tailwindcss';
+
+body {
+  background-color: #04071d;
+}
+
+@theme {
+  /* 🎨 Paleta de Cores Vue */
+  --color-primary: #161a31;
+  --color-secundary: #cbacf9;
+
+  --color-bg: #000319;
+  --color-bgsecundary: #0c0e23;
+  --color-bgtertiary: #090c22;
+
+  --color-white: #ffffff;
+  --color-white-soft: #e4ecff;
+  --color-white-smull: #6971a2;
+}
+
+/* 
+  🌗 Modo escuro
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+  --color-section-gap: 160px; */
+
+/* 🌑 Modo Escuro */
+/* @media (prefers-color-scheme: dark) {
+  @theme {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+} */
