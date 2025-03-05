@@ -1,9 +1,10 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
+import type { eLanguageContract } from '@/interfaces/language_contract' // ✅ Certifique-se que o caminho está correto!
 
 export const useLanguageStore = defineStore('language', () => {
   const selectedLanguage = ref('PT_BR')
-  const texts = ref({}) // Inicialize com um objeto vazio para evitar `undefined`
+  const texts = ref<eLanguageContract>()
 
   async function setLanguage(language: string) {
     selectedLanguage.value = language
