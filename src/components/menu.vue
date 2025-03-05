@@ -3,22 +3,22 @@
 <template>
   <div
     class="w-screen bg-no-repeat bg-cover bg-center animate__animated animate__fadeIn"
-    :style="{ backgroundImage: `url('/src/assets/svgs/home-bg.svg')` }"
+    :style="{ backgroundImage: `url('/svgs/home-bg.svg')` }"
   >
     <section class="menu w-screen bg-no-repeat bg-cover bg-center relative pb-45 m-auto">
       <div
         class="div1 relative bg-transparent bg-no-repeat bg-cover bg-center h-50 rounded-3xl z-10 animate__animated animate__fadeInLeft"
-        :style="{ backgroundImage: `url('/src/assets/images/notebook.png')` }"
+        :style="{ backgroundImage: `url('/images/notebook.png')` }"
       >
         <div class="inner-box"></div>
         <img
           class="absolute top-30 left-15 animate__animated animate__pulse animate__infinite"
-          src="/src/assets/images/click-with-coment.png"
+          src="/images/click-with-coment.png"
           alt="click-with-coment"
         />
         <img
           class="absolute bottom-50 right-15 animate__animated animate__pulse animate__infinite"
-          src="/src/assets/images/click-with-coment-yelow.png"
+          src="/images/click-with-coment-yelow.png"
           alt="click-with-coment"
         />
         <span
@@ -34,7 +34,7 @@
       >
         <div
           class="inner-box z-10 bg-no-repeat bg-bottom bg-contain"
-          :style="{ backgroundImage: `url('/src/assets/svgs/estates-bg.svg')` }"
+          :style="{ backgroundImage: `url('/svgs/estates-bg.svg')` }"
         ></div>
 
         <p
@@ -63,11 +63,11 @@
         <div class="inner-box bg-no-repeat bg-cover bg-center"></div>
         <span
           class="code-bg-by-phone w-full h-full bg-no-repeat bg-right absolute"
-          :style="{ backgroundImage: `url('/src/assets/images/code-bg.png')` }"
+          :style="{ backgroundImage: `url('/images/code-bg.png')` }"
         ></span>
         <span
           class="w-full h-full bg-no-repeat bg-cover bg-center absolute"
-          :style="{ backgroundImage: `url('/src/assets/images/card-bg.png')` }"
+          :style="{ backgroundImage: `url('/images/card-bg.png')` }"
         ></span>
         <p
           class="z-20 text-white text-bold text-3xl pl-10 flex flex-col animate__delay-1s animate__animated animate__fadeIn"
@@ -84,11 +84,11 @@
         <div class="inner-box"></div>
         <span
           class="w-full h-full bg-no-repeat bg-cover bg-center absolute"
-          :style="{ backgroundImage: `url('/src/assets/images/card-bg.png')` }"
+          :style="{ backgroundImage: `url('/images/card-bg.png')` }"
         ></span>
         <span
           class="w-full h-22 bg-no-repeat bg-right absolute bottom-0"
-          :style="{ backgroundImage: `url('/src/assets/svgs/iphone-bg.svg')` }"
+          :style="{ backgroundImage: `url('/svgs/iphone-bg.svg')` }"
         ></span>
         <p
           class="text-white text-bold text-2xl pl-7 animate__delay-1s animate__animated animate__fadeIn"
@@ -103,7 +103,7 @@
         <div class="inner-box"></div>
         <span
           class="w-full h-full bg-no-repeat absolute rounded-3xl"
-          :style="{ backgroundImage: `url('/src/assets/images/bolun-color-bg.png')` }"
+          :style="{ backgroundImage: `url('/images/bolun-color-bg.png')` }"
         ></span>
         <p
           class="text-white w-full text-bold text-xl animate__delay-1s animate__animated animate__fadeIn text-center flex flex-col items-center"
